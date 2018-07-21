@@ -1,0 +1,16 @@
+{
+    "project_lead": "VanessaSaurus",
+    "project_email": "vsoch@imadinosaur.com",
+    "project_name": "Repo2Docker Cookie Cutter Template",
+    "project_slug": "continuous-builder",
+    "project_short_description": "A continuous builder for repo2docker to build and deploy a jupyter notebook container",
+
+    "year": "2018",
+    "version": "0.0.1",
+
+    "repo_user": "vsoch",
+    "repo_name": "cookie-builder",
+
+    "twitter_name": "vsoch"
+
+}
