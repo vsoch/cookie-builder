@@ -14,7 +14,6 @@ cookiecutter https://www.github.com/vsoch/cookie-builder
 
 ## Step 1. Generate Codebase
 
-### Quick Start
 You don't need to download or clone anything - you can just install cookiecutter 
 (a Python package on pip) and then run the `cookiecutter` command!
 
@@ -47,10 +46,25 @@ pip freeze | grep tensorflow
 
 ## Step 3. Write Notebook
 Then you can write [jupyter notebooks](http://jupyter.org/install) to your heart's content
-in the repository! When you are done, follow the instructions in the [continuous build](https://github.com/binder-examples/continuous-build) repository
+in the repository! 
+
+## Step 4. Connect to CircleCI
+
+When you are done, follow the instructions in the [continuous build](https://github.com/binder-examples/continuous-build) repository
 to connect your repository to CircleCI, define a Docker Hub repository, and then commit and push
-to trigger the automated build. That's it! When you finish and the container is deployed, you should
-be able to run it, again per [instructions here](https://repo2docker.readthedocs.io/en/latest/deploy.html). Or simply:
+to trigger the automated build. This comes down to:
+
+ - Creating a Github repository for your new project folder
+ - Connecting it to CircleCI
+ - Creating a repository on Docker Hub
+ - Defining the `DOCKER_USER`, `DOCKER_PASS`, and `CONTAINER_NAME` (the Docker Hub repository) variables in the CircleCI project settings.
+ - pushing the repo to Github to trigger the CircleCI build and deploy to Docker Hub!
+
+That's it! 
+
+## Step 5. Use your Container
+
+When you finish and the container is deployed, you should be able to run it, again per [instructions here](https://repo2docker.readthedocs.io/en/latest/deploy.html). Or simply:
 
 ```bash
 docker pull <ORG>/<NAME>
